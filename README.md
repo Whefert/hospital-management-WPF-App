@@ -4,7 +4,7 @@
 
 Hospital Management System that allows patients to be checked into the hospital. A full description of the patient is captured by the system whenever they are being checked into the hospital. The app allows a hospital staff member to log in, manage patients and manage doctor records.
 
-See video from application here ![Hospital Management WPF]()
+See video from application here ![Hospital Management WPF](https://github.com/Whefert/hospital-management-wpf-app/blob/main/Hospital%20Management%20App%20Preview.gif)
 
 ## Acceptance Criteria
 
