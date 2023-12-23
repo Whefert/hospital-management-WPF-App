@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="HospitalManagementWPFApp.AddPatientNextofKin_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManagementWPFApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" d:Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+
+
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="20 0">
+            <Label Content="Title" />
+            <TextBox x:Name="NextOfKinTitle"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="20 0">
+            <Label Content="First Name" />
+            <TextBox x:Name="NextOfFirstKinFirstName"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="3" Margin="20 0">
+            <Label Content="Last Name" />
+            <TextBox x:Name="NextOfKinLastName"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="20 0">
+            <Label Content="Date of Birth" />
+            <DatePicker x:Name="NextOfKinDOB"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2" Margin="20 0">
+            <Label Content="Type of Relation" />
+            <TextBox x:Name="NextofKinRelationshipType"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="4" Grid.Column="1" Margin="20 0" Grid.ColumnSpan="3">
+            <Label Grid.Column="1" Content="Next of Kin Contact Details" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" FontSize="24" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="1" Margin="20 0">
+            <Label Content="Email" />
+            <TextBox x:Name="NextOfKinEmail"/>
+        </StackPanel>
+        <StackPanel Grid.Row="5" Grid.Column="2" Margin="20 0">
+            <Label Content="Phone Number" />
+            <TextBox x:Name="NextOfKinNumber"/>
+        </StackPanel>
+
+        <Button x:Name="SaveProgress" Grid.Column="3"   Content="Save Porgress" HorizontalAlignment="Left" Margin="20,10,0,0" Padding="10 5" Grid.Row="7" VerticalAlignment="Top" Click="SaveProgressButton_Click"/>
+
+    </Grid>
+</UserControl>

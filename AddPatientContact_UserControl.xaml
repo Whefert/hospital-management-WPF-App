@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="HospitalManagementWPFApp.AddPatientContact_UserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManagementWPFApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" d:Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+
+            <RowDefinition Height="*"/>
+
+
+        </Grid.RowDefinitions>
+
+
+
+
+    
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="20 0">
+            <Label Content="Email" />
+            <TextBox x:Name="Email" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2" Margin="20 0">
+            <Label Content="Phone Number" />
+            <TextBox x:Name="PhoneNumber" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="20 0" >
+            <Label Grid.Column="1" Content="Home Address" HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" FontSize="24"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="1" Margin="20 0">
+            <Label Content="Address Line 1" />
+            <TextBox x:Name="AddressLine1" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="2" Margin="20 0">
+            <Label Content="Address Line 2" />
+            <TextBox x:Name="AddressLine2"  />
+        </StackPanel>
+        
+        <StackPanel Grid.Row="3" Grid.Column="3" Margin="20 0">
+            <Label Content="Parish" />
+            <ComboBox x:Name="Parish"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Grid.Column="1" Margin="20 0">
+            <Label Content="City" />
+            <TextBox  x:Name="City"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Grid.Column="2" Margin="20 0">
+            <Label  Content="Country" />
+            <ComboBox x:Name="Country"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Grid.Column="1" Margin="20 0" >
+            <Label Grid.Column="1" Content="Occupation " HorizontalAlignment="Left"  Grid.Row="4" VerticalAlignment="Center" FontSize="24"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Grid.Column="1" Margin="20 0">
+            <Label Content="Job Title" />
+            <TextBox x:Name="JobTitle" />
+        </StackPanel>
+        <StackPanel Grid.Row="6" Grid.Column="2" Margin="20 0">
+            <Label Content="Employer" />
+            <TextBox x:Name="Employer"  />
+        </StackPanel>
+        <Button Grid.Column="3" x:Name="SaveProgress" Content="Save Progress" HorizontalAlignment="Left" Margin="20,0,0,5" Grid.Row="6" Padding="10 5" VerticalAlignment="Bottom" Click="SaveProgress_Click"/>
+
+    </Grid>
+</UserControl>
